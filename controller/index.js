@@ -6,5 +6,5 @@ module.exports = {
 	loginController : loginController,
 	jsonPatch:jsonPatch,
 	createThumbnail:createThumbnail,
-	adminController:adminController
+	adminController:adminController,
 };

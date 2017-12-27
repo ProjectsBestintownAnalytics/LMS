@@ -1,3 +1,5 @@
 module.exports = {
-    AdminService:require('./adminService')
+    AdminService:require('./adminService'),
+    AdminRolesService:require('./adminRolesServices'),
+    UserService:require('./userService')
 }

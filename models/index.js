@@ -1,3 +1,5 @@
 module.exports = {
-    Admin:require('./admin')
+    Admin:require('./admin'),
+    AdminRoles:require('./adminRoles'),
+    User:require('./user')
 }

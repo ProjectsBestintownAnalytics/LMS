@@ -23,8 +23,8 @@ const swaggerDefaultResponseMessages = [
 
 const DATABASE = {
     USER_ROLES: {
-        ADMIN: 'ADMIN',
-        FINANCE:'FINANCE'
+        STUDENT: 'STUDENT',
+        CORPORATE:'CORPORATE'
     }
 };
 
@@ -49,6 +49,16 @@ const STATUS_MSG = {
 			statusCode:400,
 			customMessage : "Image is corrupted of Url is wrong!",
 			type : "IMAGE_UPLOAD_ERROR"        
+		},
+        USER_ALREADY_EXIST:{
+            statusCode:400,
+            customMessage : "User Already Exist",
+            type : "USER_ALREADY_EXIST"
+		},
+		MONGO_ERROR:{
+            statusCode:400,
+            customMessage : "Error while perfoming DB query",
+            type : "MONGO_ERROR"
 		}
 	},
 

@@ -29,5 +29,36 @@ router.post("/v1/admin/getAdmin",(req, res)=>{
     });
 });
 
+router.post("/v1/admin/createAdminRoles",(req, res)=>{
+    Controller.adminController.createAdminRoles(req,(err,data) =>{
+        if(err){
+            res.status(err.statusCode).send(err);
+        }
+        res.send(data);
+    });
+});
+
+
+router.get("/v1/admin/getAdminRoles",(req,res)=>{
+    Controller.adminController.getAdminRoles(req,(err,data)=>{
+        console.log(err,data)
+        if(err){
+            res.status(err.statusCode).send(err)
+        }
+        else{
+            res.send(data)
+        }
+    })
+})
+
+router.post("/v1/admin/createUserByAdmin",(req, res)=>{
+    Controller.adminController.createUserByAdmin(req,(err,data) =>{
+        if(err){
+            res.status(err.statusCode).send(err);
+        }
+        res.send(data);
+    });
+});
+
 
 module.exports = router;
